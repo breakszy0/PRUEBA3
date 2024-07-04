@@ -1,3 +1,56 @@
+"""
+Estimado/a estudiante,
+Desarrolle una aplicación en Python utilizando Visual Studio que permita resolver el siguiente caso:
+La empresa de tours y expediciones “SurExplora” necesita desarrollar un sistema que permita registrar las reservas de sus
+clientes para sus tours en la Patagonia Chilena. Para el funcionamiento del sistema se requiere las siguientes funcionalidades:
+
+1. Registrar Reserva
+
+2. Listar Todas las Reservas
+
+3. Imprimir Detalle de Reservas por Destino
+
+
+4. Salir del Programa
+Registrar Reserva Para registrar una reserva se requiere lo siguiente: Nombre y apellido del cliente, ciudad de origen, detalle del
+tour. Por ejemplo, la empresa ofrece tours a Torres del Paine, Carretera Austral y Chiloé. Debe permitir seleccionar entre 1 de las
+3 opciones e ingresar la cantidad de personas para el tour. Por lo tanto, un detalle de reserva podría verse registrado de la
+
+siguiente manera:
+
+
+
+
+Cliente Ciudad de Origen Tour Cantidad de Personas
+
+Juan Pérez Santiago Torres del Paine 2
+María López Valdivia Chiloé 3
+Debe validar que todos los datos sean ingresados.
+
+
+
+Listar Reservas Debe mostrar en la pantalla la lista de todas las reservas realizadas similar al ejemplo anterior de registro de
+reservas.
+
+
+Imprimir Detalle de Reservas por Destino Para imprimir el detalle de reservas, el usuario debe seleccionar alguno de los destinos
+donde es posible realizar un tour. Estos destinos deben estar previamente definidos en algún tipo de colección de Python en el
+código y por lo menos deben ser tres. Por ejemplo: Torres del Paine, Carretera Austral, Chiloé. Al seleccionar uno de los destinos,
+se generará un archivo de texto (.txt) con el detalle de las reservas que se deberá llevar a ese destino. Este debe tener la misma
+
+
+
+
+forma del registro completo de las opciones anteriores pero en archivo de texto.
+Salir del Programa El programa debe funcionar hasta que el usuario decida salir.
+GitHub El código desarrollado por el estudiante debe ser subido en su plenitud a GitHub.
+
+"""
+
+
+
+
+
 class Reserva:
     def __init__(self, cliente, ciudad_origen, tour, cantidad_personas):
         self.cliente = cliente
