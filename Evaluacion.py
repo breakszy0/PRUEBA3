@@ -113,12 +113,12 @@ def imprimir_detalle_de_Reservas_por_destino(reservas):
 
     
     destino = input("Selecciona un destino (Torres del Paine, Carretera Austral o Chiloe): ")
-    filename = f"{destino}_reservas.txt"
-    with open(filename, "w") as file:
+    nombre_archivo = f"{destino}_reservas.txt"
+    with open(nombre_archivo, "w") as file:
         for reserva in reservas:
             if reserva.tour == destino:
                 file.write(f"{reserva}\n")
-    print(f"Detalle de reservas para {destino} guardado en {filename}")
+    print(f"Detalle de reservas para {destino} guardado en {nombre_archivo}")
 
 def main():
     reservas = []
@@ -139,7 +139,7 @@ def main():
             print("¡Hasta luego!")
             break
         else:
-            print("Opción inválida. Inténtalo nuevamente.")
+            print("Opcion invalida. Inténtalo nuevamente.")
 
 if __name__ == "__main__":
     main()
