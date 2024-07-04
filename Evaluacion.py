@@ -43,7 +43,7 @@ def main():
         elif opcion == "4":
             break
         else:
-            print("Opcion invalida. Intentalo nuevamente.")
+            print("Opcion ingresada incorrecta. ")
 
 if __name__ == "__main__":
     main()
